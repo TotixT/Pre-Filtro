@@ -10,7 +10,23 @@
 
 ###
 
-<p align="left">Hello World!!</p>
+<p align="left">1. Primero tiene que entrar al BackEnd. </p>
+
+```bash
+cd API_BackEnd/
+```
+
+<p align="left">2. Ya dentro del BackEnd, instalar el node_modules para que funcione el proyecto. </p>
+
+```bash
+npm install
+```
+
+<p align="left">3. Correr la aplicación (En esta caso el BackEnd) en modo desarrollo. </p>
+
+```bash
+npm run start
+```
 
 ###
 
