@@ -30,7 +30,7 @@
 
 ###
 
-<h3 align="left">[`Swagger`](./API_BackEnd/Swagger/swagger.json)</h3>
+[`Swagger`](./API_BackEnd/Swagger/swagger.json)
 
 ###
 
