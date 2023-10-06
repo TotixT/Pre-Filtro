@@ -78,9 +78,19 @@ npm start
 
 <h2 align="left">Planteamiento Del Proyecto:</h2>
 
-###
+Este Sistema de adinistracion de Salud & Bienestar se creo con la finalidad de ayudar a un punto de salud, a llevar el debido control con respecto a su equipo de profesionales, usuarios registrados con ellos y sus respectivos planes y control de ellos mismo, por lo que la pagina cuenta con la revision de:
+* Usuario: Esta mantiene todo lo relacionado a los usuarios que tiene el sistema de salud.
+* Citas: Esta mantiene el control de citas programadas entre usuario y profesionales.
+* Profesionales: Esta mantiene todo lo relacionado a los profesionales que tiene el sistema de salud.
+* Diario Alimentacion: Esta mantiene el control de alimentacion entre usuario y las recetas que coma durante un fecha o dia.
+* Recetas: Esta mantiene todo lo relacionado a las recetas que tiene el sistema de salud.
 
-<p align="left">Hello World!!</p>
+Cada una de las colecciones creadas y trabajadas cuentan con su debido CRUD los cuales permiten:
+
+* GET: Obtiene los registros de informacion, dependiendo de la coleccion que se mande buscar.
+* POST: Crea nuevos registros de información.
+* DELETE: Eliminar Registro de Informacion Existentes por el Id.
+* PUT: Actulizar Informacion Existente por el Id.
 
 ###
 
