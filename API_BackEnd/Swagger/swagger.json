@@ -1,0 +1,1294 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Sobre Salud & Bienestar de las Personas",
+        "version": "1.0.0",
+        "description": "Esta API maneja la información de la base de datos del Pre-Filtro 'Salud&Bienestar_API' y su Base de Datos Única Principal (salud) junto con sus colecciones y documentos correspondientes."
+    },
+    "servers": [
+        {
+            "url": "http://localhost:5001/API",
+            "description": "Localhost Server for testing the Salud & Bienestar API"
+        }
+    ],
+    "paths": {
+        "/usuario": {
+            "get": {
+                "tags": [
+                    "usuario"
+                ],
+                "summary": "Get all Usuarios",
+                "description": "Obtiene una lista con todos los usuarios existentes",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "usuario": {
+                                            "nombre": "Santiago",
+                                            "correo_electronico": "Santiago@gmail.com",
+                                            "fecha_nacimiento": "1986-01-15T00:00:00.000+00:00",
+                                            "metas_salud": [
+                                                "6512dc7e254e41e8ee4e22b8"
+                                            ],
+                                            "historial_medico": "6512dccb254e41e8ee4e22b9",
+                                            "conexiones": [
+                                                "6512de79254e41e8ee4e22c0"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/usuario": {
+            "post": {
+                "tags": [
+                    "usuario"
+                ],
+                "summary": "Create a Usuario",
+                "description": "Crea un Usuario en la base de datos",
+                "requestBody": {
+                    "require": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_usu/usuario"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "usuario": {
+                                            "nombre": "Santiago",
+                                            "correo_electronico": "Santiago@gmail.com",
+                                            "fecha_nacimiento": "1986-01-15T00:00:00.000+00:00",
+                                            "metas_salud": [
+                                                "6512dc7e254e41e8ee4e22b8"
+                                            ],
+                                            "historial_medico": "6512dccb254e41e8ee4e22b9",
+                                            "conexiones": [
+                                                "6512de79254e41e8ee4e22c0"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/usuario/{_id}": {
+            "delete": {
+                "tags": [
+                    "usuario"
+                ],
+                "summary": "Delete a Usuario",
+                "description": "Elimina un Usuario de la base de datos",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "_id",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "description": "Id del usuario a eliminar"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "deleted"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/upd/usuario/{_id}": {
+            "put": {
+                "tags": [
+                    "usuario"
+                ],
+                "summary": "Actualiza un Usuario",
+                "description": "Actualiza un Usuario en la base de datos",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_usu/Test_Usu"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "_id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID del usuario a actualizar",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "Actualizado"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "NOT OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "ID no encontrado"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/calendario_citas": {
+            "get": {
+                "tags": [
+                    "calendario_citas"
+                ],
+                "summary": "Get all Citas",
+                "description": "Busca citas en el calendario de citas según los parámetros especificados.",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "calendario_citas": {
+                                            "usuario_id": "6512db3b254e41e8ee4e22b3",
+                                            "profesional_id": "6512dec6254e41e8ee4e22c1@gmail.com",
+                                            "fecha_cita": "2023-09-10T14:30:00.000+00:00",
+                                            "tipo_cita": "Examen médico"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/calendario_citas": {
+            "post": {
+                "tags": [
+                    "calendario_citas"
+                ],
+                "summary": "Create a Cita",
+                "description": "Crea una Cita en la base de datos",
+                "requestBody": {
+                    "require": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_cit/calendario_citas"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "calendario_citas": {
+                                            "usuario_id": "6512db3b254e41e8ee4e22b3",
+                                            "profesional_id": "6512dec6254e41e8ee4e22c1@gmail.com",
+                                            "fecha_cita": "2023-09-10T14:30:00.000+00:00",
+                                            "tipo_cita": "Examen médico"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/calendario_citas/{_id}": {
+            "delete": {
+                "tags": [
+                    "calendario_citas"
+                ],
+                "summary": "Delete a Cita",
+                "description": "Elimina una Cita de la base de datos",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "_id",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "description": "Id de la Cita a eliminar"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "deleted"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/upd/calendario_citas/{_id}": {
+            "put": {
+                "tags": [
+                    "calendario_citas"
+                ],
+                "summary": "Actualiza una Cita",
+                "description": "Actualiza una Cita en la base de datos",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_cit/Test_Cit"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "_id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID de la Cita a actualizar",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "Actualizado"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "NOT OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "ID no encontrado"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/info_profesionales": {
+            "get": {
+                "tags": [
+                    "info_profesionales"
+                ],
+                "summary": "Get all Profesionales",
+                "description": "Obtiene una lista con todos los profesionales existentes",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "info_profesionales": {
+                                            "nombre": "Dr. Ana Rodríguez",
+                                            "especialidad": "Cardiología@gmail.com",
+                                            "direccion_clinica": "123 Calle Principal",
+                                            "telefono": "+1234567890"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/info_profesionales": {
+            "post": {
+                "tags": [
+                    "info_profesionales"
+                ],
+                "summary": "Create a Profesional",
+                "description": "Crea un Profesional en la base de datos",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_prof/info_profesionales"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "info_profesionales": {
+                                            "nombre": "Dr. Ana Rodríguez",
+                                            "especialidad": "Cardiología@gmail.com",
+                                            "direccion_clinica": "123 Calle Principal",
+                                            "telefono": "+1234567890"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/info_profesionales/{_id}": {
+            "delete": {
+                "tags": [
+                    "info_profesionales"
+                ],
+                "summary": "Delete a Profesional",
+                "description": "Elimina un Profesional de la base de datos",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "_id",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "description": "Id del profesional a eliminar"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "deleted"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/upd/info_profesionales/{_id}": {
+            "put": {
+                "tags": [
+                    "info_profesionales"
+                ],
+                "summary": "Actualiza un Profesional",
+                "description": "Actualiza un Profesional en la base de datos",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_prof/Test_Prof"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "_id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID del Profesional a actualizar",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "Actualizado"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "NOT OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "ID no encontrado"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/diario_alimentacion": {
+            "get": {
+                "tags": ["diario_alimentacion"],
+                "summary": "Get Diario de Alimentación",
+                "description": "Obtiene el diario de alimentación para un usuario.",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "diario_alimentacion": {
+                                            "usuario_id": "6512db3b254e41e8ee4e22b3",
+                                            "alimentos_consumidos": ["Manzana", "Banana"],
+                                            "fecha": "2023-09-01T12:00:00.000+00:00",
+                                            "recetas_consumidas": ["6512ddec254e41e8ee4e22be"]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/diario_alimentacion": {
+            "post": {
+                "tags": ["diario_alimentacion"],
+                "summary": "Create Diario de Alimentación",
+                "description": "Crea un registro de diario de alimentación en la base de datos.",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_diar/diario_alimentacion"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "diario_alimentacion": {
+                                            "usuario_id": "6512db3b254e41e8ee4e22b3",
+                                            "alimentos_consumidos": ["Manzana", "Banana"],
+                                            "fecha": "2023-09-01T12:00:00.000+00:00",
+                                            "recetas_consumidas": ["6512ddec254e41e8ee4e22be"]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/diario_alimentacion/{_id}": {
+            "delete": {
+                "tags": ["diario_alimentacion"],
+                "summary": "Delete Diario de Alimentación",
+                "description": "Elimina un registro de diario de alimentación de la base de datos",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "_id",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "description": "ID del registro de diario de alimentación a eliminar"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "deleted"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/upd/diario_alimentacion/{_id}": {
+            "put": {
+                "tags": ["diario_alimentacion"],
+                "summary": "Update Diario de Alimentación",
+                "description": "Actualiza un registro de diario de alimentación en la base de datos",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_diar/Test_Diar"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "_id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID del registro de diario de alimentación a actualizar",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "Actualizado"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "NOT OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "ID no encontrado"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        },
+        "/recetas_planes_comida": {
+            "get": {
+                "tags": ["recetas_planes_comida"],
+                "summary": "Get Recetas de Planes de Comida",
+                "description": "Obtiene las recetas de planes de comida disponibles.",
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "no schema defined"
+                                    },
+                                    "example": {
+                                        "recetas_planes_comida": {
+                                            "nombre": "Ensalada de pollo",
+                                            "ingredientes": ["Pollo", "Lechuga", "Tomate"],
+                                            "instrucciones": "Mezcle todos los ingredientes y sirva frío."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/recetas_planes_comida":{
+            "post": {
+                "tags": ["recetas_planes_comida"],
+                "summary": "Create Receta de Plan de Comida",
+                "description": "Crea una nueva receta de plan de comida en la base de datos.",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_rece/recetas_planes_comida"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "recetas_planes_comida": {
+                                            "nombre": "Ensalada de pollo",
+                                            "ingredientes": ["Pollo", "Lechuga", "Tomate"],
+                                            "instrucciones": "Mezcle todos los ingredientes y sirva frío."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Not Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }            
+        },
+        "/del/recetas_planes_comida/{_id}": {
+            "delete": {
+                "tags": ["recetas_planes_comida"],
+                "summary": "Delete Receta de Plan de Comida",
+                "description": "Elimina una receta de plan de comida de la base de datos",
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "_id",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "description": "ID de la receta de plan de comida a eliminar"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "deleted"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/upd/recetas_planes_comida/{_id}": {
+            "put": {
+                "tags": ["recetas_planes_comida"],
+                "summary": "Update Receta de Plan de Comida",
+                "description": "Actualiza una receta de plan de comida en la base de datos",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/info_rece/Test_Rece"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "_id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID de la receta de plan de comida a actualizar",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "msg": "Actualizado"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "NOT OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "Bad Request (Could Change)"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "example": {
+                                        "error": "ID no encontrado"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        },
+        "info_usu": {
+            "usuario": {
+                "type": "object",
+                "properties": {
+                    "nombre": {
+                        "type": "string",
+                        "example": "Santiago"
+                    },
+                    "correo_electronico": {
+                        "type": "string",
+                        "example": "santiago@gmail.com"
+                    },
+                    "fecha_nacimiento": {
+                        "type": "string",
+                        "example": "1984-01-15T00:00:00.000+00:00"
+                    },
+                    "metas_salud": {
+                        "type": "array",
+                        "example": [
+                            "6512dc7e254e41e8ee4e22b8"
+                        ]
+                    },
+                    "historial_medico": {
+                        "type": "string",
+                        "example": "6512dccb254e41e8ee4e22b9"
+                    },
+                    "conexiones": {
+                        "type": "array",
+                        "example": [
+                            "6512de79254e41e8ee4e22c0"
+                        ]
+                    }
+                }
+            },
+            "Test_Usu": {
+                "type": "object",
+                "properties": {
+                    "nombre": {
+                        "type": "string",
+                        "example": "Santiago"
+                    },
+                    "correo_electronico": {
+                        "type": "string",
+                        "example": "santiago@gmail.com"
+                    },
+                    "fecha_nacimiento": {
+                        "type": "string",
+                        "example": "1984-01-15T00:00:00.000+00:00"
+                    },
+                    "metas_salud": {
+                        "type": "array",
+                        "example": [
+                            "6512dc7e254e41e8ee4e22b8"
+                        ]
+                    },
+                    "historial_medico": {
+                        "type": "string",
+                        "example": "6512dccb254e41e8ee4e22b9"
+                    },
+                    "conexiones": {
+                        "type": "array",
+                        "example": [
+                            "6512de79254e41e8ee4e22c0"
+                        ]
+                    }
+                }
+            }
+        },
+        "info_cit": {
+            "calendario_citas": {
+                "type": "object",
+                "properties": {
+                    "usuario_id": {
+                        "type": "string",
+                        "example": "6512db3b254e41e8ee4e22b3"
+                    },
+                    "profesional_id": {
+                        "type": "string",
+                        "example": "6512dec6254e41e8ee4e22c1"
+                    },
+                    "fecha_cita": {
+                        "type": "string",
+                        "example": "2023-09-10T14:30:00.000+00:00"
+                    },
+                    "tipo_cita": {
+                        "type": "string",
+                        "example": "Examen médico"
+                    }
+                }
+            },
+            "Test_Cit": {
+                "type": "object",
+                "properties": {
+                    "usuario_id": {
+                        "type": "string",
+                        "example": "6512db3b254e41e8ee4e22b3"
+                    },
+                    "profesional_id": {
+                        "type": "string",
+                        "example": "6512dec6254e41e8ee4e22c1"
+                    },
+                    "fecha_cita": {
+                        "type": "string",
+                        "example": "2023-09-10T14:30:00.000+00:00"
+                    },
+                    "tipo_cita": {
+                        "type": "string",
+                        "example": "Examen médico"
+                    }
+                }
+            }
+        },
+        "info_prof": {
+            "info_profesionales": {
+                "type": "object",
+                "properties": {
+                    "nombre": {
+                        "type": "string",
+                        "example": "Dr. Ana Rodríguez"
+                    },
+                    "especialidad": {
+                        "type": "string",
+                        "example": "Cardiología"
+                    },
+                    "direccion_clinica": {
+                        "type": "string",
+                        "example": "123 Calle Principal"
+                    },
+                    "telefono": {
+                        "type": "string",
+                        "example": "+1234567890"
+                    }
+                }
+            },
+            "Test_Prof": {
+                "type": "object",
+                "properties": {
+                    "nombre": {
+                        "type": "string",
+                        "example": "Dr. Ana Rodríguez"
+                    },
+                    "especialidad": {
+                        "type": "string",
+                        "example": "Cardiología"
+                    },
+                    "direccion_clinica": {
+                        "type": "string",
+                        "example": "123 Calle Principal"
+                    },
+                    "telefono": {
+                        "type": "string",
+                        "example": "+1234567890"
+                    }
+                }
+            }
+        },
+        "info_diar": {
+            "diario_alimentacion": {
+                "type": "object",
+                "properties": {
+                    "usuario_id": {
+                        "type": "string",
+                        "example": "6512db3b254e41e8ee4e22b3"
+                    },
+                    "alimentos_consumidos": {
+                        "type": "array",
+                        "example": [
+                            "Manzana",
+                            "Banana"
+                        ]
+                    },
+                    "fecha": {
+                        "type": "string",
+                        "example": "2023-09-01T12:00:00.000+00:00"
+                    },
+                    "recetas_consumidas": {
+                        "type": "array",
+                        "example": [
+                            "6512ddec254e41e8ee4e22be"
+                        ]
+                    }
+                }
+            },
+            "Test_Diar": {
+                "type": "object",
+                "properties": {
+                    "usuario_id": {
+                        "type": "string",
+                        "example": "6512db3b254e41e8ee4e22b3"
+                    },
+                    "alimentos_consumidos": {
+                        "type": "array",
+                        "example": [
+                            "Manzana",
+                            "Banana"
+                        ]
+                    },
+                    "fecha": {
+                        "type": "string",
+                        "example": "123 Calle Principal"
+                    },
+                    "recetas_consumidas": {
+                        "type": "array",
+                        "example": [
+                            "6512ddec254e41e8ee4e22be"
+                        ]
+                    }
+                }
+            }
+        },
+        "info_rece": {
+            "recetas_planes_comida": {
+                "type": "object",
+                "properties": {
+                    "nombre": {
+                        "type": "string",
+                        "example": "Ensalada de pollo"
+                    },
+                    "ingredientes": {
+                        "type": "array",
+                        "example": [
+                            "Pollo",
+                            "Lechuga",
+                            "Tomate"
+                        ]
+                    },
+                    "instrucciones": {
+                        "type": "string",
+                        "example": "Mezcle todos los ingredientes y sirva frío."
+                    }
+                }
+            },
+            "Test_Rece": {
+                "type": "object",
+                "properties": {
+                    "nombre": {
+                        "type": "string",
+                        "example": "Ensalada de pollo"
+                    },
+                    "ingredientes": {
+                        "type": "array",
+                        "example": [
+                            "Pollo",
+                            "Lechuga",
+                            "Tomate"
+                        ]
+                    },
+                    "instrucciones": {
+                        "type": "string",
+                        "example": "Mezcle todos los ingredientes y sirva frío."
+                    }
+                }
+            }
+        }
+    }
+}
