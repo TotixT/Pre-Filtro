@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6512dec6254e41e8ee4e22c1"
+  },
+  "nombre": "Dr. Ana Rodríguez",
+  "especialidad": "Cardiología",
+  "direccion_clinica": "123 Calle Principal",
+  "telefono": "+1234567890"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065422"
+  },
+  "nombre": "Dr. Juan Pérez",
+  "especialidad": "Cirugía General",
+  "direccion_clinica": "456 Calle Secundaria",
+  "telefono": "+9876543210"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065423"
+  },
+  "nombre": "Dr. María García",
+  "especialidad": "Pediatría",
+  "direccion_clinica": "789 Avenida Principal",
+  "telefono": "+5678901234"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065424"
+  },
+  "nombre": "Dr. Laura Martínez",
+  "especialidad": "Dermatología",
+  "direccion_clinica": "321 Calle de la Salud",
+  "telefono": "+2345678901"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065425"
+  },
+  "nombre": "Dr. Carlos López",
+  "especialidad": "Neurología",
+  "direccion_clinica": "654 Avenida de la Ciencia",
+  "telefono": "+3456789012"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065426"
+  },
+  "nombre": "Dr. Patricia Fernández",
+  "especialidad": "Ginecología",
+  "direccion_clinica": "987 Calle de la Mujer",
+  "telefono": "+4567890123"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065427"
+  },
+  "nombre": "Dr. Javier Ramírez",
+  "especialidad": "Oftalmología",
+  "direccion_clinica": "210 Avenida de la Visión",
+  "telefono": "+2345678901"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065428"
+  },
+  "nombre": "Dr. Ana María González",
+  "especialidad": "Psiquiatría",
+  "direccion_clinica": "543 Calle de la Mente",
+  "telefono": "+1234567890"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f065429"
+  },
+  "nombre": "Dr. Carmen Rodríguez",
+  "especialidad": "Oncología",
+  "direccion_clinica": "876 Avenida de la Esperanza",
+  "telefono": "+5678901234"
+},
+{
+  "_id": {
+    "$oid": "652077c44c25eba73f06542a"
+  },
+  "nombre": "Dr. Roberto Sánchez",
+  "especialidad": "Ortopedia",
+  "direccion_clinica": "109 Calle de la Movilidad",
+  "telefono": "+9876543210"
+}]

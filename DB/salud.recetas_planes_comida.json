@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "6512ddec254e41e8ee4e22be"
+  },
+  "nombre": "Ensalada de pollo",
+  "ingredientes": [
+    "Pollo",
+    "Lechuga",
+    "Tomate"
+  ],
+  "instrucciones": "Mezcle todos los ingredientes y sirva frío."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f065419"
+  },
+  "nombre": "Ensalada de atún",
+  "ingredientes": [
+    "Atún en lata",
+    "Lechuga",
+    "Tomate",
+    "Aceitunas",
+    "Aceite de oliva"
+  ],
+  "instrucciones": "Mezcle todos los ingredientes y sirva frío."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f06541a"
+  },
+  "nombre": "Sopa de lentejas",
+  "ingredientes": [
+    "Lentejas",
+    "Cebolla",
+    "Zanahoria",
+    "Apio"
+  ],
+  "instrucciones": "Cocine las lentejas con los vegetales hasta que estén tiernas. Condimente al gusto."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f06541b"
+  },
+  "nombre": "Tacos de pescado",
+  "ingredientes": [
+    "Filete de pescado",
+    "Tortillas de maíz",
+    "Repollo",
+    "Crema agria",
+    "Salsa de mango"
+  ],
+  "instrucciones": "Fría el pescado hasta que esté dorado y sírvalo en las tortillas con los condimentos."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f06541c"
+  },
+  "nombre": "Pasta Alfredo",
+  "ingredientes": [
+    "Pasta",
+    "Crema",
+    "Mantequilla",
+    "Queso parmesano"
+  ],
+  "instrucciones": "Cocine la pasta y mezcle con la crema, la mantequilla y el queso parmesano. Sirva caliente."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f06541d"
+  },
+  "nombre": "Pizza de pepperoni",
+  "ingredientes": [
+    "Masa de pizza",
+    "Salsa de tomate",
+    "Queso mozzarella",
+    "Pepperoni"
+  ],
+  "instrucciones": "Extienda la masa, agregue la salsa, el queso y el pepperoni. Hornee hasta que esté dorada."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f06541e"
+  },
+  "nombre": "Ensalada César",
+  "ingredientes": [
+    "Lechuga romana",
+    "Pollo a la parrilla",
+    "Crutones",
+    "Salsa César"
+  ],
+  "instrucciones": "Combine los ingredientes y añada la salsa César al gusto."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f06541f"
+  },
+  "nombre": "Hamburguesa clásica",
+  "ingredientes": [
+    "Carne molida",
+    "Pan de hamburguesa",
+    "Lechuga",
+    "Tomate",
+    "Cebolla",
+    "Queso cheddar"
+  ],
+  "instrucciones": "Ase la carne, colóquela en el pan y agregue los ingredientes. ¡Listo para comer!"
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f065420"
+  },
+  "nombre": "Pancakes de arándanos",
+  "ingredientes": [
+    "Harina",
+    "Leche",
+    "Huevo",
+    "Arándanos"
+  ],
+  "instrucciones": "Haga la masa, agregue los arándanos y cocine hasta que estén dorados por ambos lados."
+},
+{
+  "_id": {
+    "$oid": "652077604c25eba73f065421"
+  },
+  "nombre": "Tarta de manzana",
+  "ingredientes": [
+    "Manzanas",
+    "Masa de tarta",
+    "Azúcar",
+    "Canela"
+  ],
+  "instrucciones": "Cubra la masa con manzanas, azúcar y canela, y hornee hasta que esté dorada."
+}]

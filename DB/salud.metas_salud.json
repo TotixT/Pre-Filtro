@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "6512dc7e254e41e8ee4e22b8"
+  },
+  "objetivo": "Perder peso",
+  "descripcion": "Perder 5 kilos en 2 meses"
+},
+{
+  "_id": {
+    "$oid": "6514745d1c18bb010603e021"
+  },
+  "objetivo": "Aumentar la resistencia",
+  "descripcion": "Subir mi capacidad de resistencia a la hora de correr"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065411"
+  },
+  "objetivo": "Ganar músculo",
+  "descripcion": "Aumentar la masa muscular en 3 meses"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065412"
+  },
+  "objetivo": "Mejorar la resistencia",
+  "descripcion": "Correr 10 kilómetros sin parar en 2 meses"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065413"
+  },
+  "objetivo": "Reducir el estrés",
+  "descripcion": "Practicar meditación diariamente durante 30 minutos"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065414"
+  },
+  "objetivo": "Aprender yoga",
+  "descripcion": "Dominar las posturas de yoga en 3 meses"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065415"
+  },
+  "objetivo": "Mejorar la flexibilidad",
+  "descripcion": "Realizar estiramientos diarios durante 4 semanas"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065416"
+  },
+  "objetivo": "Aumentar la fuerza",
+  "descripcion": "Levantar un 20% más de peso en 2 meses"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065417"
+  },
+  "objetivo": "Mantener un estilo de vida activo",
+  "descripcion": "Realizar al menos 150 minutos de ejercicio por semana"
+},
+{
+  "_id": {
+    "$oid": "652076e74c25eba73f065418"
+  },
+  "objetivo": "Mejorar la alimentación",
+  "descripcion": "Seguir una dieta equilibrada durante 3 meses"
+}]

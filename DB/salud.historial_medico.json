@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "6512dccb254e41e8ee4e22b9"
+  },
+  "alergias": [
+    "Polen",
+    "Penicilina"
+  ],
+  "enfermedades_cronicas": [
+    "Hipertensión"
+  ],
+  "cirugias_previas": [
+    "Apéndice"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f06542b"
+  },
+  "alergias": [
+    "Maní",
+    "Polvo"
+  ],
+  "enfermedades_cronicas": [
+    "Diabetes"
+  ],
+  "cirugias_previas": [
+    "Cesárea"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f06542c"
+  },
+  "alergias": [
+    "Mariscos",
+    "Nueces"
+  ],
+  "enfermedades_cronicas": [
+    "Asma"
+  ],
+  "cirugias_previas": [
+    "Colecistectomía"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f06542d"
+  },
+  "alergias": [
+    "Pollen",
+    "Sulfa"
+  ],
+  "enfermedades_cronicas": [
+    "Artritis"
+  ],
+  "cirugias_previas": [
+    "Artroscopia de rodilla"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f06542e"
+  },
+  "alergias": [
+    "Lácteos",
+    "Polvo"
+  ],
+  "enfermedades_cronicas": [
+    "Epilepsia"
+  ],
+  "cirugias_previas": [
+    "Histerectomía"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f06542f"
+  },
+  "alergias": [
+    "Huevos",
+    "Hierba"
+  ],
+  "enfermedades_cronicas": [
+    "Enfermedad de Crohn"
+  ],
+  "cirugias_previas": [
+    "Reemplazo de cadera"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f065430"
+  },
+  "alergias": [
+    "Cacahuetes",
+    "Moho"
+  ],
+  "enfermedades_cronicas": [
+    "Colitis ulcerosa"
+  ],
+  "cirugias_previas": [
+    "Cirugía de vesícula biliar"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f065431"
+  },
+  "alergias": [
+    "Mariscos",
+    "Polvo"
+  ],
+  "enfermedades_cronicas": [
+    "Fibromialgia"
+  ],
+  "cirugias_previas": [
+    "Reemplazo de rodilla"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f065432"
+  },
+  "alergias": [
+    "Pollen",
+    "Nueces"
+  ],
+  "enfermedades_cronicas": [
+    "Hipotiroidismo"
+  ],
+  "cirugias_previas": [
+    "Cirugía de nariz"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65207a5b4c25eba73f065433"
+  },
+  "alergias": [
+    "Maní",
+    "Mascotas"
+  ],
+  "enfermedades_cronicas": [
+    "Enfermedad pulmonar obstructiva crónica (EPOC)"
+  ],
+  "cirugias_previas": [
+    "Cirugía de corazón"
+  ]
+}]

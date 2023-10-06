@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "6512de79254e41e8ee4e22c0"
+  },
+  "nombre_contacto": "María López",
+  "correo_contacto": "maria@example.com"
+},
+{
+  "_id": {
+    "$oid": "651475861c18bb010603e025"
+  },
+  "nombre_contacto": "Feddi Duran",
+  "correo_contacto": "feddi@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f065409"
+  },
+  "nombre_contacto": "María López",
+  "correo_contacto": "maria@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f06540a"
+  },
+  "nombre_contacto": "Juan Pérez",
+  "correo_contacto": "juan@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f06540b"
+  },
+  "nombre_contacto": "Ana Rodríguez",
+  "correo_contacto": "ana@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f06540c"
+  },
+  "nombre_contacto": "Luis García",
+  "correo_contacto": "luis@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f06540d"
+  },
+  "nombre_contacto": "Laura Martínez",
+  "correo_contacto": "laura@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f06540e"
+  },
+  "nombre_contacto": "Carlos Sánchez",
+  "correo_contacto": "carlos@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f06540f"
+  },
+  "nombre_contacto": "Isabel González",
+  "correo_contacto": "isabel@example.com"
+},
+{
+  "_id": {
+    "$oid": "65206af24c25eba73f065410"
+  },
+  "nombre_contacto": "Pedro Ramírez",
+  "correo_contacto": "pedro@example.com"
+}]

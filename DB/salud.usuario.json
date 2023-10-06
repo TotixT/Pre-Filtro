@@ -1,0 +1,230 @@
+[{
+  "_id": {
+    "$oid": "65146bc51c18bb010603e017"
+  },
+  "nombre": "Monica",
+  "correo_electronico": "monica@example.com",
+  "fecha_nacimiento": {
+    "$date": "1986-01-15T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "6512dc7e254e41e8ee4e22b8"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "6512dccb254e41e8ee4e22b9"
+  },
+  "conexiones": [
+    {
+      "$oid": "6512de79254e41e8ee4e22c0"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "651d8093b43dd7f8aebf2529"
+  },
+  "nombre": "Amed",
+  "correo_electronico": "amed@example.com",
+  "fecha_nacimiento": {
+    "$date": "1984-01-15T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "6514745d1c18bb010603e021"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "6512dccb254e41e8ee4e22b9"
+  },
+  "conexiones": [
+    {
+      "$oid": "6512de79254e41e8ee4e22c0"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652080a24c25eba73f06543c"
+  },
+  "nombre": "Luisa Martínez",
+  "correo_electronico": "luisa@example.com",
+  "fecha_nacimiento": {
+    "$date": "1986-01-15T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "6512dc7e254e41e8ee4e22b8"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "6512dccb254e41e8ee4e22b9"
+  },
+  "conexiones": [
+    {
+      "$oid": "652081f3427ce3c1623c1c10"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652080a24c25eba73f06543d"
+  },
+  "nombre": "David García",
+  "correo_electronico": "david@example.com",
+  "fecha_nacimiento": {
+    "$date": "1990-02-20T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "652076e74c25eba73f065414"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f06542b"
+  },
+  "conexiones": [
+    {
+      "$oid": "65206af24c25eba73f06540b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652081104c25eba73f06543e"
+  },
+  "nombre": "María Rodríguez",
+  "correo_electronico": "maria@example.com",
+  "fecha_nacimiento": {
+    "$date": "1988-04-10T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "652076e74c25eba73f065412"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f06542c"
+  },
+  "conexiones": [
+    {
+      "$oid": "65206af24c25eba73f06540d"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652081104c25eba73f06543f"
+  },
+  "nombre": "Javier Pérez",
+  "correo_electronico": "javier@example.com",
+  "fecha_nacimiento": {
+    "$date": "1992-07-25T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "652076e74c25eba73f065416"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f06542d"
+  },
+  "conexiones": [
+    {
+      "$oid": "651475861c18bb010603e025"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652081104c25eba73f065440"
+  },
+  "nombre": "Ana López",
+  "correo_electronico": "ana@example.com",
+  "fecha_nacimiento": {
+    "$date": "1985-11-03T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "652076e74c25eba73f065418"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f06542e"
+  },
+  "conexiones": [
+    {
+      "$oid": "6512de79254e41e8ee4e22c0"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652081104c25eba73f065441"
+  },
+  "nombre": "Pedro Ramírez",
+  "correo_electronico": "pedro@example.com",
+  "fecha_nacimiento": {
+    "$date": "1989-09-12T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "652076e74c25eba73f065411"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f065431"
+  },
+  "conexiones": [
+    {
+      "$oid": "65206af24c25eba73f06540e"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652081104c25eba73f065442"
+  },
+  "nombre": "Laura Martínez",
+  "correo_electronico": "laura@example.com",
+  "fecha_nacimiento": {
+    "$date": "1991-06-28T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "652076e74c25eba73f065414"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f065430"
+  },
+  "conexiones": [
+    {
+      "$oid": "65206af24c25eba73f06540f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6520817a4c25eba73f065443"
+  },
+  "nombre": "Carlos Sánchez",
+  "correo_electronico": "carlos@example.com",
+  "fecha_nacimiento": {
+    "$date": "1990-03-20T00:00:00.000Z"
+  },
+  "metas_salud": [
+    {
+      "$oid": "6512dc7e254e41e8ee4e22b8"
+    }
+  ],
+  "historial_medico": {
+    "$oid": "65207a5b4c25eba73f06542a"
+  },
+  "conexiones": [
+    {
+      "$oid": "65206af24c25eba73f06540b"
+    }
+  ]
+}]

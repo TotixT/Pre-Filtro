@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "6512de1d254e41e8ee4e22bf"
+  },
+  "usuario_id": {
+    "$oid": "6512db3b254e41e8ee4e22b3"
+  },
+  "profesional_id": {
+    "$oid": "6512dec6254e41e8ee4e22c1"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-10T14:30:00.000Z"
+  },
+  "tipo_cita": "Examen médico"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f065456"
+  },
+  "usuario_id": {
+    "$oid": "65146bc51c18bb010603e017"
+  },
+  "profesional_id": {
+    "$oid": "6512dec6254e41e8ee4e22c1"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-10T14:30:00.000Z"
+  },
+  "tipo_cita": "Examen médico"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f065457"
+  },
+  "usuario_id": {
+    "$oid": "651d8093b43dd7f8aebf2529"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065423"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-11T15:00:00.000Z"
+  },
+  "tipo_cita": "Consulta general"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f065458"
+  },
+  "usuario_id": {
+    "$oid": "652080a24c25eba73f06543c"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065429"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-12T16:30:00.000Z"
+  },
+  "tipo_cita": "Consulta oncológica"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f065459"
+  },
+  "usuario_id": {
+    "$oid": "652080a24c25eba73f06543d"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065428"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-13T10:45:00.000Z"
+  },
+  "tipo_cita": "Consulta ortopédica"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f06545a"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f06543e"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065427"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-14T14:15:00.000Z"
+  },
+  "tipo_cita": "Consulta oftalmológica"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f06545b"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f06543f"
+  },
+  "profesional_id": {
+    "$oid": "652086cd427ce3c1623c1c1a"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-15T11:30:00.000Z"
+  },
+  "tipo_cita": "Consulta neurológica"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f06545c"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f065440"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065424"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-16T12:00:00.000Z"
+  },
+  "tipo_cita": "Consulta dermatológica"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f06545d"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f065441"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065426"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-17T09:15:00.000Z"
+  },
+  "tipo_cita": "Consulta ginecológica"
+},
+{
+  "_id": {
+    "$oid": "6520865f4c25eba73f06545e"
+  },
+  "usuario_id": {
+    "$oid": "6520817a4c25eba73f065443"
+  },
+  "profesional_id": {
+    "$oid": "652077c44c25eba73f065422"
+  },
+  "fecha_cita": {
+    "$date": "2023-09-18T13:45:00.000Z"
+  },
+  "tipo_cita": "Consulta cardiológica"
+}]

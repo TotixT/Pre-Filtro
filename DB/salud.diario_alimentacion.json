@@ -1,0 +1,200 @@
+[{
+  "_id": {
+    "$oid": "652089ba427ce3c1623c1c1c"
+  },
+  "usuario_id": {
+    "$oid": "6512db3b254e41e8ee4e22b3"
+  },
+  "alimentos_consumidos": [
+    "Manzana",
+    "Banana"
+  ],
+  "fecha": {
+    "$date": "2023-09-01T12:00:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "6512ddec254e41e8ee4e22be"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f06545f"
+  },
+  "usuario_id": {
+    "$oid": "6512db3b254e41e8ee4e22b3"
+  },
+  "alimentos_consumidos": [
+    "Manzana",
+    "Banana"
+  ],
+  "fecha": {
+    "$date": "2023-09-01T12:00:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "6512ddec254e41e8ee4e22be"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065460"
+  },
+  "usuario_id": {
+    "$oid": "651d8093b43dd7f8aebf2529"
+  },
+  "alimentos_consumidos": [
+    "Arándanos",
+    "Yogur"
+  ],
+  "fecha": {
+    "$date": "2023-09-02T13:30:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "652077604c25eba73f065420"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065461"
+  },
+  "usuario_id": {
+    "$oid": "652080a24c25eba73f06543c"
+  },
+  "alimentos_consumidos": [
+    "Ensalada de pollo",
+    "Sopa de lentejas"
+  ],
+  "fecha": {
+    "$date": "2023-09-03T14:45:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "6512ddec254e41e8ee4e22be"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065462"
+  },
+  "usuario_id": {
+    "$oid": "652080a24c25eba73f06543d"
+  },
+  "alimentos_consumidos": [
+    "Tacos de pescado",
+    "Pizza de pepperoni"
+  ],
+  "fecha": {
+    "$date": "2023-09-04T18:15:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "652077604c25eba73f06541b"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065463"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f06543e"
+  },
+  "alimentos_consumidos": [
+    "Pasta Alfredo",
+    "Ensalada César"
+  ],
+  "fecha": {
+    "$date": "2023-09-05T20:30:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "652077604c25eba73f06541c"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065464"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f06543f"
+  },
+  "alimentos_consumidos": [
+    "Hamburguesa clásica",
+    "Pancakes de arándanos"
+  ],
+  "fecha": {
+    "$date": "2023-09-06T08:00:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "652077604c25eba73f06541f"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065465"
+  },
+  "usuario_id": {
+    "$oid": "652081104c25eba73f065440"
+  },
+  "alimentos_consumidos": [
+    "Manzana",
+    "Banana"
+  ],
+  "fecha": {
+    "$date": "2023-09-07T12:00:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "6512ddec254e41e8ee4e22be"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065466"
+  },
+  "usuario_id": {
+    "$oid": "65208b45427ce3c1623c1c25"
+  },
+  "alimentos_consumidos": [
+    "Arándanos",
+    "Yogur"
+  ],
+  "fecha": {
+    "$date": "2023-09-08T13:30:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "652077604c25eba73f065420"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65208b154c25eba73f065467"
+  },
+  "usuario_id": {
+    "$oid": "6520817a4c25eba73f065443"
+  },
+  "alimentos_consumidos": [
+    "Ensalada de pollo",
+    "Sopa de lentejas"
+  ],
+  "fecha": {
+    "$date": "2023-09-09T14:45:00.000Z"
+  },
+  "recetas_consumidas": [
+    {
+      "$oid": "6512ddec254e41e8ee4e22be"
+    }
+  ]
+}]
