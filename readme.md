@@ -28,6 +28,24 @@ npm install
 npm run start
 ```
 
+<p align="left">4. Entrar en otra terminal de consola y ahi entrar al FrontEnd </p>
+
+```bash
+cd API_FrontEnd/
+```
+
+<p align="left">5. Dentro del FrontEnd, instalar el node_modules para que funcione el proyecto. </p>
+
+```bash
+npm install
+```
+
+<p align="left">6. Correr la aplicación (En esta caso el FrontEnd) en modo desarrollo. </p>
+
+```bash
+npm start
+```
+
 ###
 
 <h2 align="left">Maquetacion: Figma, Swagger & Diagrama DB</h2>
