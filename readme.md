@@ -56,7 +56,7 @@ npm start
 
 ###
 
-<h3 src="https://www.figma.com/file/yrby264OXkkzA7BOkWHdBm/Pre-Filtro?type=design&node-id=0%3A1&mode=design&t=mmZIEq3VmUlU6Krq-1" align="left">Figma</h3
+[Figma](https://www.figma.com/file/yrby264OXkkzA7BOkWHdBm/Pre-Filtro?type=design&node-id=0%3A1&mode=design&t=mmZIEq3VmUlU6Krq-1)
 
 ###
 
